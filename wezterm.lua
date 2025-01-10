@@ -3,8 +3,9 @@ local wezterm = require 'wezterm'
 local config  = wezterm.config_builder()
 
 local bg_opacity = 0.90
+local base = 'rgb(30,30,46)'
 
-config.color_scheme = 'Catppuccin Macchiato'
+config.color_scheme = 'Catppuccin Mocha'
 config.font_dirs = {'~/Library/Fonts', 'fonts'}
 config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 16.0
@@ -19,10 +20,10 @@ config.text_background_opacity = 1.0
 config.use_fancy_tab_bar = false
 config.colors = {
     tab_bar = {
-        background = 'rgba(36,39,58,0.9)',
+        background = base,
         inactive_tab_edge = 'rgba(36,39,58,0.9)',
         new_tab = {
-            bg_color = 'rgba(36,39,58,0.9)',
+            bg_color = base,
             fg_color = '#eeeeee',
         },
     },
@@ -30,15 +31,15 @@ config.colors = {
 
 
 config.window_frame = {
-    font = wezterm.font { family = 'Roboto', weight = 'Bold' },
+    font = wezterm.font { family = 'Inter', weight = 'Light' },
     font_size = 16,
 }
 
 config.window_padding = {
     left = 0,
     right = 0,
-    top = 25,
-    bottom = 0,
+    top = "1.1cell",
+    bottom = "1cell",
 }
 
 

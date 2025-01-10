@@ -35,13 +35,23 @@ wezterm.on(
 
         local ati = active_tab_index(tabs)
         local lavender = 'rgb(180, 190, 254)'
+        local rosewater = 'rbg(245,244,220)'
+        local flamingo = 'rbg(242,205,205)'
+        local green = 'rgb(166,227,161)'
+        local saphire = 'rgb(116,199,236)'
         local blue = 'rgb(137, 180, 250)'
-        local bar_color = 'rgba(36,39,58,0.9)'
+        local text = 'rgb(205,214,244)'
+        local subtext1 = 'rgb(186,194,222)'
+        local subtext0 = 'rgb(166,173,200)'
+        local surface2 = 'rgb(91, 96, 120)'
+        local surface0 = 'rgb(49,50,68)'
+        local base = 'rgb(30,30,46,0.9)'
+        local bar_color = base
         local title = tab_title(tab)
-        local active_color = blue
-        local inactive_color = lavender
+        local active_color = lavender
+        local inactive_color = surface2
         local tab_color = inactive_color
-        local text_color = 'rgba(255,255,255,1)'
+        local text_color = subtext1
         local left = LEFT_TRIANGLE
         local right = RIGHT_TRIANGLE
         local head_text = right
@@ -62,6 +72,7 @@ wezterm.on(
             tail_fg_color = tab_color
             head_bg_color = tab_color
             head_fg_color = tab_color
+            text_color = surface0
         end
         if tab.tab_index == 0 then
             head_text = "  "
