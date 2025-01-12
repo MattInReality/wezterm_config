@@ -38,7 +38,7 @@ config.window_frame = {
 config.window_padding = {
     left = 0,
     right = 0,
-    top = "1.1cell",
+    top = "1.35cell",
     bottom = "1cell",
 }
 
