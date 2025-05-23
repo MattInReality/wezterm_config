@@ -2,13 +2,13 @@ require("tabs")
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
-local bg_opacity = 0.90
+local bg_opacity = 1
 local base = "rgb(30,30,46)"
 
 config.color_scheme = "Catppuccin Mocha"
 config.font_dirs = { "~/Library/Fonts", "fonts" }
 config.font = wezterm.font("JetBrains Mono")
-config.font_size = 16.0
+config.font_size = 14
 config.window_background_image_hsb = {
 	brightness = 0.2,
 	hue = 1.0,
