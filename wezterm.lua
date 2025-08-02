@@ -15,6 +15,14 @@ config.window_background_image_hsb = {
 	saturation = 1.0,
 }
 
+config.unix_domains = {
+	{
+		name = "unix",
+	},
+}
+
+config.default_gui_startup_args = { "connect", "unix" }
+
 config.keys = {
 	{
 		key = "d",
