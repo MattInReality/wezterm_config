@@ -14,6 +14,7 @@ config.window_background_image_hsb = {
 	hue = 1.0,
 	saturation = 1.0,
 }
+config.max_fps = 120
 
 config.unix_domains = {
 	{
@@ -76,8 +77,8 @@ config.window_frame = {
 }
 
 config.window_padding = {
-	left = 0,
-	right = 0,
+	left = "1cell",
+	right = "1cell",
 	top = "1.35cell",
 	bottom = "1cell",
 }
